@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="806.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.orm.controller.RicieptionController">
+   <children>
+      <TextField fx:id="nameTxt" layoutX="101.0" layoutY="231.0" prefHeight="38.0" prefWidth="294.0" promptText="name" style="-fx-background-color: #fafafa; -fx-padding: 0 15;" />
+      <TextField fx:id="emailTxt" layoutX="421.0" layoutY="231.0" prefHeight="38.0" prefWidth="293.0" promptText="Gmail" style="-fx-background-color: #fafafa; -fx-padding: 0 15;" />
+      <TextField fx:id="paddwordTxt" layoutX="101.0" layoutY="321.0" prefHeight="38.0" prefWidth="294.0" promptText="password" style="-fx-background-color: #fafafa; -fx-padding: 0 15;" />
+      <TextField fx:id="contactTxt" layoutX="421.0" layoutY="321.0" prefHeight="38.0" prefWidth="294.0" promptText="contact" style="-fx-background-color: #fafafa; -fx-padding: 0 15;" />
+      <JFXButton layoutX="231.0" layoutY="391.0" onAction="#saveAdmin" prefHeight="38.0" prefWidth="344.0" style="-fx-background-color: #0d6efd;" text="Create Account" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView fitHeight="95.0" fitWidth="130.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/pngtree-mental-health-problems-flat-illustration.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="47.0" layoutY="491.0" onAction="#gotoBack" text="Back">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="101.0" layoutY="207.0" text="Name">
+         <font>
+            <Font name="Gabarito Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="207.0" text="Gmail Address">
+         <font>
+            <Font name="Gabarito Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="296.0" text="Password">
+         <font>
+            <Font name="Gabarito Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="296.0" text="Contact No.">
+         <font>
+            <Font name="Gabarito Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="290.0" layoutY="449.0" text=" already have an account ?">
+         <font>
+            <Font name="Gabarito Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="451.0" layoutY="449.0" onMouseClicked="#gotoLog" text="Sign In" textFill="#0d6efd">
+         <font>
+            <Font name="Gabarito Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="101.0" text="Create a New Receptionist Account">
+         <font>
+            <Font name="Gabarito Regular" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="92.0" text="MindVista">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

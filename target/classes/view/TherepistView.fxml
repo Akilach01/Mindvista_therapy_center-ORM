@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="806.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.orm.controller.TherepsiController">
+   <children>
+      <JFXButton fx:id="saveBtn" layoutX="326.0" layoutY="201.0" onAction="#saveTherepist" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: green;" text="save" textFill="#fcfcfc">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="updateBtn" layoutX="461.0" layoutY="201.0" onAction="#updateTherepist" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: #0d6efd;" text="Update" textFill="#fcfcfc">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="deleteBtn" layoutX="595.0" layoutY="201.0" onAction="#deleteTherepist" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: red;" text="Delete" textFill="#fcfcfc">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <Label fx:id="idLbl" layoutX="661.0" layoutY="42.0" prefHeight="34.0" prefWidth="99.0" text="Label">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <TextField fx:id="nameTxt" layoutX="76.0" layoutY="149.0" prefHeight="40.0" prefWidth="310.0" promptText="Name" style="-fx-background-color: #fafafa; -fx-padding: 0 15px;" />
+      <TextField fx:id="emailTxt" layoutX="401.0" layoutY="149.0" prefHeight="40.0" prefWidth="310.0" promptText="email" style="-fx-background-color: #fafafa; -fx-padding: 0 15px;" />
+      <TextField fx:id="contactTxt" layoutX="76.0" layoutY="201.0" prefHeight="40.0" prefWidth="228.0" promptText="contact" style="-fx-background-color: #fafafa; -fx-padding: 0 15px;" />
+      <TableView fx:id="threTbl" layoutX="41.0" layoutY="275.0" onMouseClicked="#searchTherepist" prefHeight="216.0" prefWidth="724.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nameCol" prefWidth="227.1999969482422" text="Name" />
+            <TableColumn fx:id="emailCol" prefWidth="280.79998779296875" text="Email" />
+            <TableColumn fx:id="contactCol" prefWidth="139.99993896484375" text="Contact" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="95.0" fitWidth="130.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/pngtree-mental-health-problems-flat-illustration.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="34.0" layoutY="511.0" onAction="#gotoBack" text="Back">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="42.0" layoutY="85.0" text="MindVista">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="252.0" layoutY="53.0" text="Manage Therapists">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

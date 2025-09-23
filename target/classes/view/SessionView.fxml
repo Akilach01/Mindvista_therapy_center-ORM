@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="806.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.orm.controller.SessionController">
+   <children>
+      <ComboBox fx:id="therepistCmb" layoutX="381.0" layoutY="134.0" onAction="#selectTherepist" prefHeight="40.0" prefWidth="284.0" promptText="Select Therepist" style="-fx-background-color: #fafafa; -fx-padding: 0 15px;" />
+      <Label fx:id="idLbl" layoutX="680.0" layoutY="139.0" prefHeight="30.0" prefWidth="87.0" text="Label">
+         <font>
+            <Font name="Segoe UI Bold" size="17.0" />
+         </font></Label>
+      <TextField fx:id="nameTxt" layoutX="61.0" layoutY="134.0" prefHeight="40.0" prefWidth="301.0" promptText="Name" style="-fx-background-color: #fafafa; -fx-padding: 0 15px;" />
+      <TextField fx:id="startTxt" layoutX="61.0" layoutY="214.0" prefHeight="40.0" prefWidth="168.0" promptText="Start" style="-fx-background-color: #fafafa; -fx-padding: 0 15px;" />
+      <TextField fx:id="endTxt" layoutX="242.0" layoutY="214.0" prefHeight="40.0" prefWidth="168.0" promptText="End" style="-fx-background-color: #fafafa; -fx-padding: 0 15px;" />
+      <TableView fx:id="sessionTbl" layoutX="56.0" layoutY="282.0" onMouseClicked="#searchSession" prefHeight="218.0" prefWidth="694.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nameCol" prefWidth="211.4000244140625" text="Name" />
+            <TableColumn fx:id="startTimeCol" prefWidth="154.20001220703125" text="Start Time(am)" />
+            <TableColumn fx:id="endtimeCol" prefWidth="126.0" text="End Time(pm)" />
+            <TableColumn fx:id="therepyIdCol" prefWidth="130.7999267578125" text="TherepistID" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="saveBtn" layoutX="419.0" layoutY="214.0" onAction="#saveSession" prefHeight="40.0" prefWidth="104.0" style="-fx-background-color: green;" text="Save" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="updateBtn" layoutX="530.0" layoutY="214.0" onAction="#updateSession" prefHeight="40.0" prefWidth="104.0" style="-fx-background-color: #0d6efd;" text="Update" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton layoutX="35.0" layoutY="511.0" onAction="#gotoBack" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="deleteBtn" layoutX="641.0" layoutY="214.0" onAction="#deleteSession" prefHeight="40.0" prefWidth="104.0" style="-fx-background-color: red;" text="Delete" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label fx:id="sesionIdLbl" layoutX="726.0" layoutY="28.0" prefHeight="18.0" prefWidth="48.0" text="Label">
+         <font>
+            <Font name="Segoe UI Bold" size="17.0" />
+         </font></Label>
+      <ImageView fitHeight="95.0" fitWidth="130.0" layoutX="13.0" layoutY="3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assests/pngtree-mental-health-problems-flat-illustration.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="64.0" layoutY="110.0" text="Name">
+         <font>
+            <Font name="Gabarito Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="110.0" text="Therapist Name">
+         <font>
+            <Font name="Gabarito Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="192.0" text="Start Time(am)">
+         <font>
+            <Font name="Gabarito Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="242.0" layoutY="192.0" text="End Time(pm)">
+         <font>
+            <Font name="Gabarito Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="81.0" text="MindVista">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="267.0" layoutY="39.0" text="Manage Sessions">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
