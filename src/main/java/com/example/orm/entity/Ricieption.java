@@ -22,10 +22,10 @@ public class Ricieption {
     private String email;
     private int contact;
 
-    public Ricieption(String name, String password, String email, int contact) {
+    public Ricieption(String name,String email, String password,int contact) {
        this.name = name;
-       this.password = password;
        this.email = email;
+        this.password = password;
        this.contact = contact;
     }
 

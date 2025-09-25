@@ -66,11 +66,11 @@ public class RicieptionController {
 
         try {
             boolean resp = ricieptionServce.saveRicieption(new RicieptionDto(
-                nameTxt.getText(), emailTxt.getText(), paddwordTxt.getText(),
+                nameTxt.getText(),emailTxt.getText(),paddwordTxt.getText(),
                 Integer.parseInt(contactTxt.getText())));
         
                 if (resp) {
-                new Alert(AlertType.INFORMATION, "New Ricieptoin Added Success!").show();
+                new Alert(AlertType.INFORMATION, "New Reception Added Successfully!").show();
                 clearFields();
                 } else {
                 new Alert(AlertType.ERROR, "Something Went Wrong!").show();
